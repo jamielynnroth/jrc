@@ -42,6 +42,14 @@ $(document).ready(function () {
       }
   });
 
+// Services animations
+  $('#services-content li').each(function () {
+    $(this).hover(function () {
+      $(this).find('h3').addClass('animated pulse');
+    }, function() {
+      $(this).find('h3').removeClass('animated pulse');
+    });
+  });
 
     //NAVIGATION BAR ANIMATIONS
     //Shrink header and img + hide text when scrolling begins
@@ -189,16 +197,30 @@ $(document).ready(function () {
     $('.lessButton').hide();
 
     $('.moreButton').click(function () {
+        var el = $(this),  
+        newone = el.clone(true);
+
         $('#joep2').show();
-        $('#joep2').addClass('wow bounceInDown');
+        $('#joep2').addClass('animated fadeInDown');
         $('.moreButton').hide();
         $('.lessButton').show();
+        
+        el.before(newone);
+        $('.' + el.attr('.moreButton') + ':last').remove();
+         $(newone).remove();
     });
 
     $('.lessButton').click(function () {
-        $('#joep2').hide();
+
+      var el = $(this),  
+        newone = el.clone(true);
+
+        $('#joep2').addClass('fadeOutUp');
         $('.moreButton').show();
         $('.lessButton').hide();
+        el.before(newone);
+        $('.' + el.attr('.lessButton') + ':last').remove();
+        $(newone).remove();
     });
 
 
