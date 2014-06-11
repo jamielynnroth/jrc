@@ -1,0 +1,655 @@
+// @import: url('/styles/typography.less');
+//@import url('/styles/flexslider.css');
+
+@background: url("../bower_components/bootstrap/assets/grey.png"); //#DDF0E0;
+@white: #ffffff;
+@inactive: #8B93B1;//#94A2CC;
+
+html {
+	margin: 0 auto;
+}
+body {
+	background-image: url("../bower_components/bootstrap/assets/grey.png");
+	-webkit-font-smoothing: antialiased;
+}
+section:after {
+	clear:both;
+}
+.hide {
+	display:none !important;
+}
+
+.active {
+	display:block;
+}
+.white {
+	color:white;
+}
+.button{
+		padding: 5px;
+		font-family: "CorbertCondensed-Medium";
+		font-weight:bold;
+		font-size: 2em;
+		color: white; //#6D7BE2;
+		text-transform: lowercase;
+		text-align: center;
+		cursor:pointer;
+		border: 2px solid white;
+	}
+.button:hover {
+		color: @inactive; //#2E3342; //#4D6481; //#6D7BE2;
+		border: 2px solid @inactive;//#2E3342; //#4D6481; //#6D7BE2;
+	}
+
+.clear {
+	clear:both;
+}
+.subtext {
+	width: 763px; //568px;
+	// margin: 0 auto;
+	float: left;
+	// padding-top: 15px;
+	margin-left: 115px;
+	margin-bottom: 40px;
+	//clear: both;
+	margin-top: 20px;
+}
+
+.aboutsub {
+	width:651px;
+	margin-left: 175px;
+	margin-top: 0 !important;
+}
+
+.title {
+	float:left;
+	line-height: 1.2em;
+	text-align: center;
+	border:3px solid white;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	color: white;
+	text-transform: lowercase;
+	margin-left: 30px;
+}
+
+.titleInverse {
+	float:left;
+	line-height: 1.2em;
+	text-align: center;
+	border:3px solid black;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	color: black;
+	text-transform: lowercase;
+}
+
+#shade {
+	opacity: .7;
+	background-color:white;
+	height: 145px;
+	width: 100%;
+	position:fixed;
+	z-index: 2;
+}
+
+.header {
+	height: 125px;
+	padding: 5px;
+	width: 100%;
+		// min-width: 1020px;
+	z-index: 3;
+	position:fixed;
+	width: 100%;
+	min-width: 1200px;
+
+	#nav {
+		float: right;
+		margin-right: 30px;	
+		min-width: 510px; // prevent nav box collapse on page shrink
+	}
+
+	#logo{
+		float:left;
+		display:block;
+		margin-left: 15px;
+		img {
+			height: 120px;
+			float:left;
+			// margin: 10px;
+		} //img
+		#jrctext {
+			position: absolute; 
+			left: 145px;
+		}
+	}  // #logo
+
+	#selected {
+		background: white;
+		border: 2px solid black;
+		height: 8px;
+		min-width: 20px;
+		position: absolute;
+		opacity: 1;
+		top: 70px;
+	}
+	 ul {
+	 	margin-top: 36px;
+		line-height: 100%; /*80px;*/
+		padding: 0;
+		float:right;
+		display:block;
+		border: 2px solid black;
+		
+
+		li {
+			// border-right: 3px solid black;
+			margin-left: 25px;
+			display: inline;
+			padding-right: 25px;
+			// margin-top: 50px;
+			float: left;
+			// color: white;
+			line-height: 40px;
+
+		
+			a {
+				padding: 0;
+				margin: 0;
+				color:black;
+				text-decoration: none;
+				font-size: 1.0em; /*20px*/
+				text-transform: lowercase;
+				line-height: 40px;
+				position:relative;
+				top: 1px;
+
+				h2 {
+				margin-top: 10px;
+				margin-bottom:10px;
+				}
+			} //a
+		} //li
+	} //ul 
+}// header
+
+
+#text_background {
+		background: whitesmoke;
+		height: 125px;
+		//width: 55%;
+		opacity: .5;
+		z-index: 2;
+		position: absolute;
+		top: 60%;//605px;
+		left: 0;
+		width: 800px;
+	}//#text_background
+
+	#photo_overlay {
+		position:absolute;
+		top: 60%; //602px;
+		z-index: 2;
+		height: 125px;
+		left: 75px;
+		border-left: none;
+
+		h1 {
+			padding-top: 25px;
+			padding-left: 35px;
+		}
+		h2 {
+			padding-left: 35px;
+			margin-top: 10px;
+		}
+	}//#photo_overlay
+
+#home {
+	top: -70px;
+	width: 100%;
+	position:relative;
+	display:block;
+	min-height: 650px;
+
+	.carousel {
+		z-index: -99; // keeps this behind all content
+		padding: 0; // override bootstrap padding
+
+		.one {
+			background: url("/images/kitchen2.png");
+			background-position: 50% 50%;
+			background-size: cover;
+			-moz-background-size: cover;
+			position:absolute;
+			z-index: 0;
+			top:0;
+			bottom:0;
+			left:0;
+			right:0;
+		}
+		.two {
+			background: url("/images/kitchen3.png");
+			background-position: 50% 50%;
+			background-size: cover;
+			-moz-background-size: cover;
+			position:absolute;
+			z-index: 0;
+			top:0;
+			bottom:0;
+			left:0;
+			right:0;
+		}
+		.three {
+			background: url("/images/bathroom4.png");
+			background-position: 50% 50%;
+			background-size: cover;
+			-moz-background-size: cover;
+			position:absolute;
+			z-index: 0;
+			top:0;
+			bottom:0;
+			left:0;
+			right:0;
+		}
+		.four {
+			background: url("/images//kitchen1-crop.png");
+			background-position: 50% 50%;
+			background-size: cover;
+			-moz-background-size: cover;
+			position:absolute;
+			z-index: 0;
+			top:0;
+			bottom:0;
+			left:0;
+			right:0;
+		}
+		.five {
+			background: url("/images/kitchen5.png");
+			background-position: 50% 50%;
+			background-size: cover;
+			-moz-background-size: cover;
+			position:absolute;
+			z-index: 0;
+			top:0;
+			bottom:0;
+			left:0;
+			right:0;
+		}
+
+
+		.active.left {
+		    left:0;
+		    opacity:0;
+		    z-index:2;
+		}
+	}
+
+	// Remember that .carousel-inner was overridden in bootstrap.min.css 
+	// to remove position:relative
+	// This is necessary for the background images to show up. 
+
+	.carousel-inner {
+		heigth: 100%;
+	}
+	.carousel .item {
+		position: absolute;
+	    width: 100%;
+	    height: 100%;
+		 -webkit-transition: opacity 1s;
+		    -moz-transition: opacity 1s;
+		     -ms-transition: opacity 1s;
+		      -o-transition: opacity 1s;
+		         transition: opacity 1s;
+
+	}
+
+	.glyphicon-chevron-right, .glyphicon-chevron-left {
+		font-size: 1.5em;
+	}
+
+
+}
+
+/*****************************************************************/
+#services {
+	z-index: 0;
+	color: black;
+	padding-top: 100px;
+	margin: 0 auto;
+	position: relative;
+
+	h2 {
+		color:black;
+	}
+
+	p {
+	padding-bottom: 10px;
+	}
+
+
+	
+
+
+	#services-content {
+		margin: 0 auto;
+		position: relative;	
+		display:block;
+
+		.subtext {
+			margin-bottom: 0;
+
+		}
+		li img {
+			width: 120px;
+			margin-right: 15px;
+		}
+	
+		h3 {
+			font-size: 1.5em;
+			padding-bottom: 30px;
+			text-transform: lowercase;
+			padding-top: 5px;
+			text-align: center;
+		}
+		h4 {
+			font-size: 1.2em;
+			line-height: 1.2em;		
+			text-align: center;
+			padding-top: 10px;
+		}
+		ul {
+		list-style-type: none;
+		margin-bottom: 10px;
+			li {
+				padding-bottom: 10px;
+				float:left;
+
+			}// li
+
+			li:last-child {
+				margin-right: 0;
+			}
+		}//ul
+		.row {
+				// float:right;
+				text-align: left;
+				position:relative;
+				margin-top: 0;
+			}
+		#bottomrow {
+			// left:-115px;
+		}
+		.icon {
+			border-radius: 90px;
+			border: 2px solid black;
+		}
+
+		
+
+		.info {
+			background-color:white
+		}
+
+
+	
+	} // services-content
+
+
+
+} // #services
+
+#gallery {
+	// width: 700px;
+	margin-bottom: 100px;
+	min-height: 400px;
+}
+
+.popup-gallery {
+	.thumb {
+		height: 200px;
+		width: 200px;
+		overflow: hidden;
+		float:left;
+		margin-left: 20px;
+		margin-bottom: 20px;
+
+		img {
+			width: 400px;
+		}
+	}
+}
+/*******************************************************************/
+/*#customers {
+	background: url('tiny_grid.png');
+	height: 200px;
+	width: 100%;
+	padding: 30px;
+}
+*/
+/*#customers h1 {
+	margin:0 auto;
+	text-align: center;
+}
+*//*******************************************************************/
+
+#about {
+	background-image: url('/bower_components/bootstrap/assets/stardust.png');
+	margin: 0 auto;
+	color:black;
+	padding: 110px 30px 110px 30px;
+	overflow: auto;
+	p {
+		padding-bottom: 10px;
+	}
+	h1 {
+		text-align: center;
+	}
+	.subtext {
+		margin-top: 0;
+	}
+	#team_content {
+		display:block;
+		position:relative;
+		clear:both;
+		margin: 0 auto;
+		min-height: 603px;
+
+		img {
+			height: 175px;
+			border: 4px solid @inactive; //#2E3342;
+			border-radius: 180px;
+			margin-bottom: 15px;
+		}
+		.highlight {
+				color:white !important;
+				// border: 4px solid white !important;
+			}	
+		.border-select {
+			border: 4px solid white;
+		}
+		.employee {
+			float:left;
+
+			h2 {
+				text-align: center;
+				color: @inactive; //#2E3342; //#3856B4; //rgb(126, 126, 126);
+			}
+		}
+		#joe.employee {
+				margin-left: 0 !important;
+		}
+	}
+		.show {
+			display:none;
+		}
+
+		.teamshade {
+			z-index: 1;
+			position:absolute;
+			height: 167px;
+			width: 167px;
+			border-radius: 50%;
+			// background color used to be #D3D3D3;
+			background-color: #525569; //#3C3E4B; //#4C4E5A; //#6D7BE2; //5C6186; 
+			opacity: .7;
+			top: 4px;
+			left: 59px;
+	
+		}
+
+		#bioline {
+			background-color: #2E3342;
+			border-color: #2E3342;
+			height: 2px;
+			margin-left: 35px;
+			margin-top: 10px;
+		}
+
+		#biobox {
+			width: 830px;
+			display:block;
+			clear:both;
+			padding: 15px;
+			margin-left: 30px;
+		
+			.button {
+				float: right;
+				// margin-top: -35px;
+			}
+
+			// p.bio h4{
+			// 	display:none !important;
+			// }
+		}
+
+		p.joeBio {
+			padding-bottom: 45px;
+		}
+
+	// .more {
+	// 	padding: 5px;
+	// 	font-family: "CorbertCondensed-Medium";
+	// 	font-weight:bold;
+	// 	font-size: 30px;
+	// 	// background-color: white;
+	// 	color: white; //#6D7BE2;
+	// 	//border:none;
+	// 	text-align: center;
+	// 	cursor:pointer;
+	// 	border: 2px solid white;
+	// 	// border-radius: 5px;
+	// }
+	// .more:hover {
+	// 	color: #6D7BE2;
+	// 	border: 2px solid #6D7BE2;
+	// }
+}// #team
+
+/********************************************************************/
+//CONTACT POPUP
+
+.whiteoverlay {
+	height: 2315px;
+	position: absolute;
+	z-index: 1001;
+	background-color: white;
+	width: 100%;
+	opacity: .6;
+	display:none;
+}
+
+#popupBox {
+	display:none;
+	position:fixed;
+	//_position:absolute; /*hack for IE*/
+	top: 50%;
+	left: 50%;
+	margin-top: -75px;
+	margin-left:-175px;
+	width: 350px;
+	height: 150px;
+	background: #FFFFFF;
+	
+	//top: 150px;
+	z-index: 1002;
+	overflow:auto;
+	//margin-left: 15px;
+
+	border:2px solid #DDF0E0;      
+    padding:15px;  
+    font-size:15px;  
+    -moz-box-shadow: 0 0 5px #DDF0E0;
+    -webkit-box-shadow: 0 0 5px #DDF0E0;
+    box-shadow: 0 0 5px #DDF0E0;
+	h1 {
+		margin-bottom: 25px;
+	}
+    h2 {
+    	clear:both;
+    	float:left;
+    }
+    h3 {
+    	float:left;
+    	padding-top: 8px;
+    	padding-left:5px;
+
+    	a {
+    		color: black;
+    	}
+    }
+}
+
+a {
+	cursor:pointer;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+	}
+
+#popupBoxClose {
+    // font-size:20px;  
+    // line-height:15px;  
+    right:5px;  
+    top:5px;  
+    //height:10px;
+    position:absolute;  
+    // color:grey;  
+    // font-weight:500;   
+    img {
+    	height: 20px;
+    }   
+}
+
+#customers {
+	clear:both;
+	width:100%;
+	height: 600px;
+	position:relative;
+	margin:0;
+	padding: 30px;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 120px;
+}
+
+
+.footer {
+	border-top: 2px solid white;
+	height: 100px;
+	width: 100%;
+	clear:both;
+	margin-left: 40px;
+	// background-color:white;
+
+	p {
+		padding: 20px;
+	}
+}
+
+@media only screen and (max-device-width: 1125px) {
+
+}
+

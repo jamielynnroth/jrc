@@ -1,0 +1,407 @@
+<!doctype html>
+
+<html lang='en' class="pure-g-r">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Full Service Remodeling">
+	<meta name="author" content="Joe Roth Contracting">
+	<title>Joe Roth Contracting</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/styles/style.css">
+	<link rel="stylesheet" type="text/css" href="/styles/typography.css">
+	<link rel="stylesheet" href="styles/animate.css">
+	<link rel="stylesheet" href="styles/magnific-popup.css"> 
+	
+
+	<!-- Documentation extras
+	<link href="{{ page.base_url }}docs-assets/css/docs.css" rel="stylesheet">
+	<link href="{{ page.base_url }}docs-assets/css/pygments-manni.css" rel="stylesheet">-->
+	
+	<!--[if lt IE 9]><script src="/www/bootstrap/docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="bower_components/bootstrap/docs-assets/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="shortcut icon" href="bower_components/bootstrap/docs-assets/ico/favicon.png">
+
+</head>
+
+<body>
+	<div id="popupBox" class="container hidden">
+			<h1 class="titleInverse">contact us</h1>
+			<h2>talk to a human:</h2> 
+			<h3>888.875.4502</h3>
+			<h2>write:</h2> 
+			<a href="mailto:info@joerothcontracting.com"><h3>info@joerothcontracting.com</h3></a>
+			<a id="popupBoxClose"><img src="/bower_components/bootstrap/assets/glyphicons_197_remove.png" alt="close icon"></a>
+	</div>
+
+	<div class="whiteoverlay"></div> <!-- for the lightbox-->
+	<section id="header" class="navbar" role="navigation">
+		<div id="shade"></div>
+		<div class="header">
+			<div id="logo" class="col-lg-6">
+				<a href="#home" class="scroll"><img id="icon" src="bower_components/bootstrap/assets/logos/JRC-header-type-22-logo.png" alt="logo"><img id="jrctext" src="bower_components/bootstrap/assets/logos/JRC-header-type-22-type.png" alt="small logo"></a>
+			</div><!-- #logo-->
+			
+		<nav id="nav" class="nav col-lg-4" > 
+				<div id="selected" class="hide"></div>
+				<ul>
+					<li id="nav1"><a href="#services" class="scroll"><h2>Services</h2></a></li>
+					<li id="nav2"><a href="#about" class="scroll"><h2>About</h2></a></li>
+					<!-- <li><a href="#">Customers</a></li> -->
+					<li><a id="nav4" href="#contact"><h2>Contact</h2></a></li>
+				</ul>
+		</nav>
+		</div> <!--! .header-->
+	</section> <!-- #header-->
+
+	<section id="home">
+		<div id="carousel" data-ride="carousel" class="carousel slide col-lg-12">
+		
+			<ol class="carousel-indicators">
+				<li id="link0" data-target="#carousel" data-slide-to="0" class="active"></li>
+				<li id="link1" data-target="#carousel" data-slide-to="1"></li>  
+				<li id="link2" data-target="#carousel" data-slide-to="2"></li>  
+				<li id="link3" data-target="#carousel" data-slide-to="3"></li> 
+				<li id="link4" data-target="#carousel" data-slide-to="4"></li> 
+			</ol>  
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="item active one"></div>
+				<div class="item two"></div>
+				<div class="item three"></div>
+				<div class="item four"></div>
+				<div class="item five"></div>
+			</div>
+
+			  <!-- Controls -->
+			  <a class="left carousel-control" href="#carousel" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left"></span>
+			  </a>
+			  <a class="right carousel-control" href="#carousel" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right"></span>
+			  </a>
+		
+
+			<div id="text_background"></div>
+
+			<div id='photo_overlay'>
+				<h1>Full Service Remodeling</h1> 
+				<h2>Serving Western Mass, Southern Vermont, & New Hampshire</h2>
+			</div> <!-- #photo_overlay-->
+		</div> <!-- carousel -->
+	</section> <!--home-->
+
+	<section id="services" class="container clearfix center-block">
+		<div class="shade"></div>
+		<h1 class="titleInverse">Our Services</h1>
+		<div class="subtext col-lg-4 aboutsub">
+			<h3>
+				 We deliver highly professional exceptional craftsmanship and excellent project management to every job. Remodeling is a very complex orchestration of details. Our full service remodeling approach will guarantee the success of your project.
+			</h3>
+		</div>
+	
+
+		<div id="services-content" class="container col-lg-12">
+			<ul class="container col-lg-12">
+					<li><a href="kitchens" data-toggle="tab">
+						<img id="kitchen-icon" class=" center-block" src="/bower_components/bootstrap/assets/icons/JRC-kitchen.png">
+						</a><!-- <h3>Kitchens</h3> -->
+					</li>
+					<li><a href="moulding" data-toggle="tab">
+						<img id="moulding-icon" class="center-block " src="/bower_components/bootstrap/assets/icons/JRC-moulding.png">
+						<!-- <h3>Cabinet + trim installation</h3> -->
+						</a>
+					</li>
+					<li><a href="bathrooms" data-toggle="tab">
+						<img id="bathroom-icon" class="center-block" src="/bower_components/bootstrap/assets/icons/JRC-bathroom-sink.png">
+						<!-- <h3>Bathrooms + custom showers</h3> -->
+						</a>
+					</li>
+					<li><a href="siding" data-toggle="tab">
+						<img id-"siding-icon" class="center-block" src="/bower_components/bootstrap/assets/icons/JRC-siding.png">
+						<!-- <h3>Siding</h3> -->
+						</a>
+					</li>
+			
+					<li><a href="windows" data-toggle="tab">
+						<img id="window-icon" class="center-block" src="/bower_components/bootstrap/assets/icons/JRC-windows2.png">
+						<!-- <h3>Windows</h3> -->
+						</a>
+					</li>
+					<li><a href="decks" data-toggle="tab">
+						<img id="deck-icon" class="center-block" src="/bower_components/bootstrap/assets/icons/JRC-deck.png">
+						<!-- <h3>Decks</h3> -->
+						</a>
+					</li>
+					<li><a href="doors" data-toggle="tab">
+						<img id="door-icon" class="center-block" src="/bower_components/bootstrap/assets/icons/JRC-doors.png">
+						<!-- <h3>Doors</h3> -->
+						</a>
+					</li>
+					<li><a href="flooring" data-toggle="tab">
+						<img id="floor-icon" class="center-block" src="/bower_components/bootstrap/assets/icons/JRC-flooring.png">
+						<!-- <h3>Flooring- Tile. Wood. Laminate + Vinyl</h3> -->
+						</a>
+					</li>
+			</ul><!-- .row-->	
+
+			<div class="popup-gallery">
+				<div class="thumb">
+					<a href="images/kitchen6.jpg" title="Kitchen Remodel"><img src="images/kitchen6.jpg"></a>
+				</div>
+				<div class="thumb">
+					<a href="images/kitchen2.png" title="Kitchen Remodel"><img src="images/kitchen2.png"></a>
+				</div>
+				<div class="thumb">
+					<a href="images/kitchen3.png" title="Kitchen Remodel"><img src="images/kitchen3.png" ></a>
+				</div>
+				<div class="thumb">
+					<a href="images/kitchen5.png" title="Kitchen Remodel"><img src="images/kitchen5.png"></a>
+				</div>
+				<div class="thumb">
+					<a href="images/bathroom2.png" title="Bathroom Remodel"><img src="images/bathroom2.png"></a>
+				</div>
+				<div class="thumb">
+					<a href="images/Stairwell-edit.png" title="Kitchen Remodel"><img src="images/Stairwell-edit.png"></a>
+				</div>
+				<div class="thumb">
+					<a href="images/bathroom3.jpg" title="Bathroom Remodel"><img src="images/bathroom3.jpg"></a>
+				</div>
+				<div class="thumb">
+					<a href="images/bathroom5.jpg" title="Bathroom Remodel"><img src="images/bathroom5.jpg"></a>
+				</div>
+				<div class="thumb">
+					<a href="images/kitchen8.jpg" title="Kitchen Remodel"><img src="images/kitchen8.jpg"></a>
+				</div>				
+				<div class="thumb">
+					<a href="images/kitchen9.jpg" title="Kitchen Remodel"><img src="images/kitchen9.jpg"></a>
+				</div>		
+			</div>
+		</div><!-- #services-->
+
+			
+		</section><!-- #about-->
+<!-- 
+		<section class="tab-content" id="gallery">
+			<div id="kitchens" class="tab-pane fade in active service container col-lg-12 ">
+				<div class="col-lg-6">
+					<img class="gallery" src="/images/kitchen6-edit.png">
+				</div>
+				<div id="info-kitchens" class="info col-lg-4 col-lg-offset-1">
+					<h2>Kitchens</h2>
+					<h3>We make boring kitchens into great ones! Check out all of our beautiful kitchens!</h3>
+				</div>
+			</div>
+
+			<div id="molding" class="tab-pane fade service container col-lg-12 ">
+				<div class="col-lg-6">
+					<img class="gallery" src="/images/kitchen6-edit.png">
+				</div>
+				<div id="info-molding" class="info col-lg-4 col-lg-offset-1">
+					<h2>Molding</h2>
+					<h3>We make boring molding into great molding! Check out all of our beautiful molding!</h3>
+				</div>
+			</div>
+
+			<div id="bathrooms" class="tab-pane fade service container col-lg-12 ">
+				<div class="col-lg-6">
+					<img class="gallery" src="/images/bathroom4.png">
+				</div>
+				<div id="info-molding" class="info col-lg-4 col-lg-offset-1">
+					<h2>Molding</h2>
+					<h3>We make boring bathrooms into great ones! Check out all of our beautiful bathrooms!</h3>
+				</div>
+			</div>
+
+			<div id="siding" class="tab-pane fade service container col-lg-12 ">
+				<div class="col-lg-6">
+					<img class="gallery" src="/images/bathroom4.png">
+				</div>
+				<div id="info-molding" class="info col-lg-4 col-lg-offset-1">
+					<h2>Molding</h2>
+					<h3>We make boring bathrooms into great ones! Check out all of our beautiful bathrooms!</h3>
+				</div>
+			</div>
+
+		</section> -->
+		
+		<section id="about">
+			<div id="team_content" class="container center-block">
+				<h1 class="title">Our Team</h1>
+			
+				<div class="subtext col-lg-4 ">
+					<h3 class="white">We hand pick each and every employee for their craftsmanship and skill, and take pride in bringing 100% to every job. </h3>
+				</div>
+
+				<div id="joe" class='employee col-lg-3 col-sm-12'>
+					<div class="teamshade"></div>
+					<img class="center-block img-responsive border-select" src="/images/joe.png">
+					<h2 class="highlight name">Joseph Roth </h2>
+					<h2 class="role highlight">CEO </h2> 
+				</div>
+				
+				<div id="barbara" class='employee col-lg-3 col-sm-12'>
+					<div class="teamshade"></div>
+					<img class="center-block img-responsive" src="/images/barbara.png">
+					<h2 class="name"> Barbara Roth</h2>
+					<h2 class="role"> Director of Operations </h2> 
+				</div>	
+				
+				
+ 				<div id="bryan" class='employee col-lg-3 col-sm-12'>
+ 					<div class="teamshade"></div>
+					<img class="center-block img-responsive" src="/images/bryan.png">
+					<h2 class="name">Bryan Kohler</h2>
+					<h2 class="role"> Project Manager</h2>
+				</div>
+				
+				<div id="jerry" class='employee col-lg-3 col-sm-12'>
+					<div class="teamshade"></div>
+					<img class="center-block img-responsive" src="/images/jerry.png">
+					<h2 class="name"> Jerry Kelly </h2>
+					<h2 class="role">Sales Manager</h2>
+				</div>
+
+			<hr id="bioline" class="col-lg-11">
+			
+			<div id="biobox" class="col-lg-7 white">
+								
+				
+				<div class="bio" id="joep1">
+					<h4>
+						Joe is a craftsman with over 30 years in the field.  His hands-on experience encompasses everything from designing and building custom furniture, installing cabinetry and trim, and custom tile work, to renovating entire houses. This experience combined with his solid foundation for craftsmanship and eye for detail allows Joe to consider the full scope of remodeling projects from start to finish. 
+					</h4>
+				</div> 
+				
+				<span class="moreButton button">More</span>
+
+				<div class="bio" id="joep2" >
+					<h4>
+						Joe’s management and sales experience is also extensive; from managing the manufacturing, delivery and installation of custom store fixtures and cabinetry, to custom bathrooms and kitchens, he has worked with thousands of clients to create their dreams. Joe holds a BFA in woodworking and furniture design from the University of the Arts in Philadelphia. 
+					</h4>
+				</div>
+				
+				<span class=" lessButton button">Less</span>
+
+				<div class="bio" id="barbBio">
+					<h4>
+						Barbara also has a BFA from Philadelphia College of Art, which is where she and Joe first met. They have shared a collaboration of over 30 years in marriage and working together. Barbara's expertise is in office management and strong organizational proficiency. She has extensive experience in customer service with excellent communication skills.
+					</h4>
+				</div>
+				
+				<div class="bio" id="bryanBio">
+					<h4>
+						Bryan has been a loyal employee with Joe Roth Contracting for over 10 years. He started as a carpenter and has worked his way through the ranks to become a project manager. Bryan's hands on experience makes him knowledgeable in all aspects of running the job, from materials purchasing to the final install. Bryan is well respected by our customers who find him personable as well as a great communicator. We are thrilled to have Bryan as a member of the JRC team, and to over see all the Home Depot contracted jobs.
+					</h4>
+				</div> 
+
+				<div class="bio" id="jerryBio">
+					<h4>
+						Coming soon...
+					</h4>
+				</div> 
+			
+			</div><!--biobox-->
+			
+
+			</div> <!-- #team_content -->
+		
+		</section><!-- #team -->
+	
+		<section id="contact">
+		<!-- <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zOh025S_wV7A.kG8OPLqBLDlw" width="640" height="480"></iframe> -->
+		</section>
+
+</body>
+
+<footer class="footer pure-u-1">
+	
+	<p><h5>&copy; 2013 Joe Roth Contracting, LLC, a Home Depot certified contractor, is fully insured and up to date on all required MA Licenses. <br>We carry General Liability and Workman’s comp. We follow the rules. We are lead paint certified. <br>Joe Roth Contracting , LLC, is fully insured to protect you and your family.</h5> </p>
+
+
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+	<script src="/scripts/wow.js"></script>
+		<script>
+		 new WOW().init();
+	</script>
+
+	<script type="text/javascript" src="/scripts/main.js"></script> 
+
+	<!-- <script type="text/javascript" src="../bower_compontents/bootstrap/scripts/jquery.scrollTo.js"></script>  -->
+	<!-- <script type="text/javascript" src="/bower_components/bootstrap/scripts/jquery.nav.js"></script>  -->
+	<!-- <script src="http://platform.twitter.com/widgets.js"></script> -->
+	<script src="/scripts/magnific-popup.js"></script> 
+	<!-- <script src="/bower_components/bootstrap/docs-assets/js/holder.js"></script> -->
+	<!-- <script src="/bower_components/bootstrap/docs-assets/js/application.js"></script> -->
+
+	<script>
+	// SMOOTH SCROLL (scrollTo.js + nav.js)
+	//   $('#nav').onePageNav({
+	//     currentClass: 'current',
+	//     changeHash: true,
+	//     scrollSpeed: 750
+	// });
+
+		// $(function() {
+		//   $('a[href*=#]:not([href=#])').click(function() {
+		//     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+		//       var target = $(this.hash);
+		//       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		//       if (target.length) {
+		//         $('html,body').animate({
+		//           scrollTop: target.offset().top
+		//         }, 1000);
+		//         return false;
+		//       }
+		//     }
+		//   });
+		// });
+
+	</script>
+
+
+	<!-- {% if page.slug == "customize" %}
+	<script src="/bower_components/bootstrap/docs-assets/js/less.js"></script>
+	<script src="/bower_components/bootstrap/docs-assets/js/jszip.js"></script>
+	<script src="/bower_components/bootstrap/docs-assets/js/uglify.js"></script>
+	<script src="/bower_components/bootstrap/docs-assets/js/filesaver.js"></script>
+	<script src="/bower_components/bootstrap/docs-assets/js/raw-files.js"></script>
+	<script src="/bower_components/bootstrap/docs-assets/js/customizer.js"></script>
+	{% endif %} -->
+
+	<!-- Analytics
+	================================================== -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-47044436-1', 'joerothcontracting.com');
+	  ga('send', 'pageview');
+
+	</script>
+
+</footer><!-- .footer-->
+
+</html>
